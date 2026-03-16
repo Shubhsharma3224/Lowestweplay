@@ -1,0 +1,20 @@
+packages:
+  "framer-motion": "For premium smooth animations and page transitions"
+  "embla-carousel-react": "For the auto-sliding partners carousel"
+  "embla-carousel-autoplay": "Autoplay plugin for the partners carousel"
+  "react-hook-form": "For robust checkout form state and validation"
+  "@hookform/resolvers": "Zod resolver for the checkout form"
+  "zod": "Schema validation for the checkout form"
+  "clsx": "For conditional class names"
+  "tailwind-merge": "For merging tailwind classes safely"
+
+images:
+  - path: "artifacts/lowest-weplay/public/images/hero-mesh.png"
+    description: "Abstract soft glassmorphism gradient mesh background in very light pastel indigo, white, and subtle emerald green. Bright, clean, premium tech aesthetic."
+    aspect_ratio: "16:9"
+
+notes:
+  - Pure frontend application with no backend requirements
+  - Uses wouter for routing
+  - Tawk.to script will be injected into index.html
+  - Payment routing happens via direct Razorpay links

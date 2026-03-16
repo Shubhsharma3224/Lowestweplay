@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Lowest Weplay"
+version = "1.0.0"
+id = "artifacts/lowest-weplay"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 19747
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/lowest-weplay run dev"
+
+[services.env]
+PORT = "19747"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/lowest-weplay", "run", "build"]
+publicDir = "artifacts/lowest-weplay/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
